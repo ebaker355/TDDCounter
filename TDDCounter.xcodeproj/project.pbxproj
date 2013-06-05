@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		66EA209807F63868B2904264 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EA2C04AF482D04CAD5B12A /* Default-568h@2x.png */; };
+		66EA226E310621FDFBFA2AC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA2B5EC546F4A0A51C1D67 /* UIKit.framework */; };
+		66EA2425205D5F6654EFEC10 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EA2ABE4F304E8446B98F67 /* Default.png */; };
+		66EA25BA2831485A49C0DFE0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EA2DB99AEB6267D8F9B898 /* Default@2x.png */; };
+		66EA278D502D2682FE60EA72 /* TCCounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA2F0656E9AB4503EF7074 /* TCCounterViewController.m */; };
+		66EA27A1796A2B59FBE1C519 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA2F8346C30681A259F44A /* SenTestingKit.framework */; };
+		66EA2A1405DF455F20577B17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA20C69D799B1CAE8AF003 /* main.m */; };
+		66EA2AED34340DF4AB73B0BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66EA29B0206411AF0EE9A8D8 /* InfoPlist.strings */; };
+		66EA2B2F8D06785A36D36D30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA257AE59247CCAB5D4289 /* CoreGraphics.framework */; };
+		66EA2B421BF169C01BC9F63E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66EA23540AFA26A3B1B0A190 /* InfoPlist.strings */; };
+		66EA2B4453175E45EFA8F598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA261B8C1543D1F41A34BA /* Foundation.framework */; };
+		66EA2D4D85B764C467CB564D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA261B8C1543D1F41A34BA /* Foundation.framework */; };
+		66EA2DD0B085B0B3CE1DB249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA2B5EC546F4A0A51C1D67 /* UIKit.framework */; };
+		66EA2E33CDF4A661A019BC30 /* TCCounterViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA2DB221F0692F9841310C /* TCCounterViewControllerSpec.m */; };
+		66EA2F364AE1092A4F5BBEA7 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA2F9548EB0F7D44531E82 /* TCAppDelegate.m */; };
+		7147E245175FE07A00A481FD /* TCCounterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7147E244175FE07A00A481FD /* TCCounterView.xib */; };
+		7A7A78EC0EF84297900D5B54 /* libPods-TDDCounterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFA5E319E414EB896B52AD5 /* libPods-TDDCounterTests.a */; };
+		CFC516A41AF04F109D0CF9C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A911F00105294779966B95E0 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66EA2BD790BEC06ADAFEC196 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66EA2397107C24D5AA42FDA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66EA255256826DEC35ED5F26;
+			remoteInfo = TDDCounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D89DF7380D747EA83281DC8 /* Pods-TDDCounterTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TDDCounterTests.xcconfig"; path = "Pods/Pods-TDDCounterTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		60B0C3B61A7A48CA8C1C5877 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		66EA205027CF1B486EC6F33A /* TDDCounter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "TDDCounter-Info.plist"; sourceTree = "<group>"; };
+		66EA20C69D799B1CAE8AF003 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		66EA2487BBFBCBBE56866AEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66EA257AE59247CCAB5D4289 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66EA261B8C1543D1F41A34BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66EA279A003ADCC1F2A53102 /* TDDCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66EA2922F04B447C7613801A /* TDDCounterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDCounterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		66EA2A1C0927C957158DDDCB /* TDDCounter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TDDCounter-Prefix.pch"; sourceTree = "<group>"; };
+		66EA2ABE4F304E8446B98F67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		66EA2B5EC546F4A0A51C1D67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66EA2C04AF482D04CAD5B12A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		66EA2DB221F0692F9841310C /* TCCounterViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCounterViewControllerSpec.m; sourceTree = "<group>"; };
+		66EA2DB99AEB6267D8F9B898 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		66EA2E09235C6E723F243EE1 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		66EA2E1B2E608DE03B4D6ADC /* TDDCounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "TDDCounterTests-Info.plist"; sourceTree = "<group>"; };
+		66EA2E2C24DCD57CACF40746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66EA2F0656E9AB4503EF7074 /* TCCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCounterViewController.m; sourceTree = "<group>"; };
+		66EA2F722E58A50828E19B84 /* TCCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCounterViewController.h; sourceTree = "<group>"; };
+		66EA2F8346C30681A259F44A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		66EA2F9548EB0F7D44531E82 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		7147E244175FE07A00A481FD /* TCCounterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCCounterView.xib; sourceTree = "<group>"; };
+		A911F00105294779966B95E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAFA5E319E414EB896B52AD5 /* libPods-TDDCounterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TDDCounterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		66EA25282049568DA4217CD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA27A1796A2B59FBE1C519 /* SenTestingKit.framework in Frameworks */,
+				66EA2DD0B085B0B3CE1DB249 /* UIKit.framework in Frameworks */,
+				66EA2B4453175E45EFA8F598 /* Foundation.framework in Frameworks */,
+				7A7A78EC0EF84297900D5B54 /* libPods-TDDCounterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66EA287451D1C53E6CAF0510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA226E310621FDFBFA2AC1 /* UIKit.framework in Frameworks */,
+				66EA2D4D85B764C467CB564D /* Foundation.framework in Frameworks */,
+				66EA2B2F8D06785A36D36D30 /* CoreGraphics.framework in Frameworks */,
+				CFC516A41AF04F109D0CF9C3 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		66EA20985433C9B1A9E2E2E1 /* TDDCounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				66EA2621E1D4E2F3D0A8E701 /* Supporting Files */,
+				66EA2DB221F0692F9841310C /* TCCounterViewControllerSpec.m */,
+			);
+			path = TDDCounterTests;
+			sourceTree = "<group>";
+		};
+		66EA20C8074D4FE847E50AFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7147E244175FE07A00A481FD /* TCCounterView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66EA21D6C59379ACAF15D2D3 = {
+			isa = PBXGroup;
+			children = (
+				66EA2A3495CC4FABE7C2CD66 /* Products */,
+				66EA2DF470E0257F48CD62EC /* Frameworks */,
+				66EA28745BF239E1935BB402 /* TDDCounter */,
+				66EA20985433C9B1A9E2E2E1 /* TDDCounterTests */,
+				60B0C3B61A7A48CA8C1C5877 /* Pods.xcconfig */,
+				1D89DF7380D747EA83281DC8 /* Pods-TDDCounterTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		66EA2621E1D4E2F3D0A8E701 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66EA2E1B2E608DE03B4D6ADC /* TDDCounterTests-Info.plist */,
+				66EA29B0206411AF0EE9A8D8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66EA269CA11065D8FD105F9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66EA205027CF1B486EC6F33A /* TDDCounter-Info.plist */,
+				66EA23540AFA26A3B1B0A190 /* InfoPlist.strings */,
+				66EA20C69D799B1CAE8AF003 /* main.m */,
+				66EA2A1C0927C957158DDDCB /* TDDCounter-Prefix.pch */,
+				66EA2ABE4F304E8446B98F67 /* Default.png */,
+				66EA2DB99AEB6267D8F9B898 /* Default@2x.png */,
+				66EA2C04AF482D04CAD5B12A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66EA28745BF239E1935BB402 /* TDDCounter */ = {
+			isa = PBXGroup;
+			children = (
+				66EA269CA11065D8FD105F9A /* Supporting Files */,
+				66EA2E09235C6E723F243EE1 /* TCAppDelegate.h */,
+				66EA2F9548EB0F7D44531E82 /* TCAppDelegate.m */,
+				66EA2F0656E9AB4503EF7074 /* TCCounterViewController.m */,
+				66EA2F722E58A50828E19B84 /* TCCounterViewController.h */,
+				66EA20C8074D4FE847E50AFF /* Views */,
+			);
+			path = TDDCounter;
+			sourceTree = "<group>";
+		};
+		66EA2A3495CC4FABE7C2CD66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				66EA279A003ADCC1F2A53102 /* TDDCounter.app */,
+				66EA2922F04B447C7613801A /* TDDCounterTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		66EA2DF470E0257F48CD62EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66EA2B5EC546F4A0A51C1D67 /* UIKit.framework */,
+				66EA261B8C1543D1F41A34BA /* Foundation.framework */,
+				66EA257AE59247CCAB5D4289 /* CoreGraphics.framework */,
+				66EA2F8346C30681A259F44A /* SenTestingKit.framework */,
+				A911F00105294779966B95E0 /* libPods.a */,
+				EAFA5E319E414EB896B52AD5 /* libPods-TDDCounterTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		66EA207B2E4C04575E008197 /* TDDCounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66EA231009122DB4A49A48C8 /* Build configuration list for PBXNativeTarget "TDDCounterTests" */;
+			buildPhases = (
+				3A75DF75EED44F3FB5E50B6F /* Check Pods Manifest.lock */,
+				66EA224E68C147C3D11F2ADA /* Sources */,
+				66EA25282049568DA4217CD0 /* Frameworks */,
+				66EA2675E57A7F2C4F946F6D /* Resources */,
+				66EA2752557E5683C666995D /* ShellScript */,
+				DE282770EE324928B873C7B3 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66EA238E557B58F4D2297BAD /* PBXTargetDependency */,
+			);
+			name = TDDCounterTests;
+			productName = TDDCounterTests;
+			productReference = 66EA2922F04B447C7613801A /* TDDCounterTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		66EA255256826DEC35ED5F26 /* TDDCounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66EA2A4C0B8BCC75DEB00350 /* Build configuration list for PBXNativeTarget "TDDCounter" */;
+			buildPhases = (
+				F8F9DA7C6F43476CABCB427E /* Check Pods Manifest.lock */,
+				66EA26E3A32F9B708CF85180 /* Sources */,
+				66EA287451D1C53E6CAF0510 /* Frameworks */,
+				66EA2E1860165BCA15DB6790 /* Resources */,
+				69CCFC1121B24D3881041404 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDDCounter;
+			productName = TDDCounter;
+			productReference = 66EA279A003ADCC1F2A53102 /* TDDCounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		66EA2397107C24D5AA42FDA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "DuneParkSoftware, LLC.";
+			};
+			buildConfigurationList = 66EA2A52DAECF11973369B69 /* Build configuration list for PBXProject "TDDCounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 66EA21D6C59379ACAF15D2D3;
+			productRefGroup = 66EA2A3495CC4FABE7C2CD66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				66EA255256826DEC35ED5F26 /* TDDCounter */,
+				66EA207B2E4C04575E008197 /* TDDCounterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66EA2675E57A7F2C4F946F6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA2AED34340DF4AB73B0BB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66EA2E1860165BCA15DB6790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA2B421BF169C01BC9F63E /* InfoPlist.strings in Resources */,
+				66EA2425205D5F6654EFEC10 /* Default.png in Resources */,
+				66EA25BA2831485A49C0DFE0 /* Default@2x.png in Resources */,
+				66EA209807F63868B2904264 /* Default-568h@2x.png in Resources */,
+				7147E245175FE07A00A481FD /* TCCounterView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A75DF75EED44F3FB5E50B6F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		66EA2752557E5683C666995D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		69CCFC1121B24D3881041404 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		DE282770EE324928B873C7B3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TDDCounterTests-resources.sh\"\n";
+		};
+		F8F9DA7C6F43476CABCB427E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66EA224E68C147C3D11F2ADA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA2E33CDF4A661A019BC30 /* TCCounterViewControllerSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66EA26E3A32F9B708CF85180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66EA2A1405DF455F20577B17 /* main.m in Sources */,
+				66EA2F364AE1092A4F5BBEA7 /* TCAppDelegate.m in Sources */,
+				66EA278D502D2682FE60EA72 /* TCCounterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66EA238E557B58F4D2297BAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66EA255256826DEC35ED5F26 /* TDDCounter */;
+			targetProxy = 66EA2BD790BEC06ADAFEC196 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		66EA23540AFA26A3B1B0A190 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66EA2487BBFBCBBE56866AEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66EA29B0206411AF0EE9A8D8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66EA2E2C24DCD57CACF40746 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		66EA2088A3CB134D3D334B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		66EA2400CBB9939C6661C2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B0C3B61A7A48CA8C1C5877 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDDCounter/TDDCounter-Prefix.pch";
+				INFOPLIST_FILE = "TDDCounter/TDDCounter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		66EA260956894017E3A2BDF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B0C3B61A7A48CA8C1C5877 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDDCounter/TDDCounter-Prefix.pch";
+				INFOPLIST_FILE = "TDDCounter/TDDCounter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		66EA2796BC4D8D5FF12245BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D89DF7380D747EA83281DC8 /* Pods-TDDCounterTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDDCounter.app/TDDCounter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDDCounter/TDDCounter-Prefix.pch";
+				INFOPLIST_FILE = "TDDCounterTests/TDDCounterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		66EA29126A8588A7BD30531A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D89DF7380D747EA83281DC8 /* Pods-TDDCounterTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TDDCounter.app/TDDCounter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TDDCounter/TDDCounter-Prefix.pch";
+				INFOPLIST_FILE = "TDDCounterTests/TDDCounterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		66EA2E4DD0C6CEA311C8FCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66EA231009122DB4A49A48C8 /* Build configuration list for PBXNativeTarget "TDDCounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66EA29126A8588A7BD30531A /* Release */,
+				66EA2796BC4D8D5FF12245BA /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66EA2A4C0B8BCC75DEB00350 /* Build configuration list for PBXNativeTarget "TDDCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66EA260956894017E3A2BDF9 /* Release */,
+				66EA2400CBB9939C6661C2B5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66EA2A52DAECF11973369B69 /* Build configuration list for PBXProject "TDDCounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66EA2E4DD0C6CEA311C8FCFA /* Release */,
+				66EA2088A3CB134D3D334B0D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 66EA2397107C24D5AA42FDA1 /* Project object */;
+}
