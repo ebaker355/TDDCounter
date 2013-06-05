@@ -13,7 +13,9 @@ xcuserdata
 profile
 *.moved-aside
 DerivedData
-.idea/
+.idea/*
+.idea/scopes
+!.idea/workspace.xml
 Pods
 Podfile.lock
 
