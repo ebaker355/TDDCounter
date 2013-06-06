@@ -18,6 +18,8 @@
 		66EA2B2F8D06785A36D36D30 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA257AE59247CCAB5D4289 /* CoreGraphics.framework */; };
 		66EA2B421BF169C01BC9F63E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66EA23540AFA26A3B1B0A190 /* InfoPlist.strings */; };
 		66EA2B4453175E45EFA8F598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA261B8C1543D1F41A34BA /* Foundation.framework */; };
+		66EA2BBF8CA3FDE4DC171DF7 /* TCCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA2EDCEAF8429CD8518944 /* TCCounter.m */; };
+		66EA2D177AB34F195847F29B /* TCCounterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA2B08DC1BEF04348F16A7 /* TCCounterSpec.m */; };
 		66EA2D4D85B764C467CB564D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA261B8C1543D1F41A34BA /* Foundation.framework */; };
 		66EA2DD0B085B0B3CE1DB249 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66EA2B5EC546F4A0A51C1D67 /* UIKit.framework */; };
 		66EA2E33CDF4A661A019BC30 /* TCCounterViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EA2DB221F0692F9841310C /* TCCounterViewControllerSpec.m */; };
@@ -49,13 +51,16 @@
 		66EA2922F04B447C7613801A /* TDDCounterTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDCounterTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EA2A1C0927C957158DDDCB /* TDDCounter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TDDCounter-Prefix.pch"; sourceTree = "<group>"; };
 		66EA2ABE4F304E8446B98F67 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		66EA2B08DC1BEF04348F16A7 /* TCCounterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCounterSpec.m; sourceTree = "<group>"; };
 		66EA2B5EC546F4A0A51C1D67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		66EA2C04AF482D04CAD5B12A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		66EA2DB221F0692F9841310C /* TCCounterViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCounterViewControllerSpec.m; sourceTree = "<group>"; };
 		66EA2DB99AEB6267D8F9B898 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		66EA2DF8531F2C14DFDAB379 /* TCCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCounter.h; sourceTree = "<group>"; };
 		66EA2E09235C6E723F243EE1 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
 		66EA2E1B2E608DE03B4D6ADC /* TDDCounterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "TDDCounterTests-Info.plist"; sourceTree = "<group>"; };
 		66EA2E2C24DCD57CACF40746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		66EA2EDCEAF8429CD8518944 /* TCCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCounter.m; sourceTree = "<group>"; };
 		66EA2F0656E9AB4503EF7074 /* TCCounterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCounterViewController.m; sourceTree = "<group>"; };
 		66EA2F722E58A50828E19B84 /* TCCounterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCounterViewController.h; sourceTree = "<group>"; };
 		66EA2F8346C30681A259F44A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -96,6 +101,7 @@
 			children = (
 				66EA2621E1D4E2F3D0A8E701 /* Supporting Files */,
 				66EA2DB221F0692F9841310C /* TCCounterViewControllerSpec.m */,
+				66EA2B08DC1BEF04348F16A7 /* TCCounterSpec.m */,
 			);
 			path = TDDCounterTests;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				66EA2F0656E9AB4503EF7074 /* TCCounterViewController.m */,
 				66EA2F722E58A50828E19B84 /* TCCounterViewController.h */,
 				66EA20C8074D4FE847E50AFF /* Views */,
+				66EA2EDCEAF8429CD8518944 /* TCCounter.m */,
+				66EA2DF8531F2C14DFDAB379 /* TCCounter.h */,
 			);
 			path = TDDCounter;
 			sourceTree = "<group>";
@@ -348,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66EA2E33CDF4A661A019BC30 /* TCCounterViewControllerSpec.m in Sources */,
+				66EA2D177AB34F195847F29B /* TCCounterSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +367,7 @@
 				66EA2A1405DF455F20577B17 /* main.m in Sources */,
 				66EA2F364AE1092A4F5BBEA7 /* TCAppDelegate.m in Sources */,
 				66EA278D502D2682FE60EA72 /* TCCounterViewController.m in Sources */,
+				66EA2BBF8CA3FDE4DC171DF7 /* TCCounter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

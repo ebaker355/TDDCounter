@@ -7,28 +7,47 @@
 
 
 #import "TCCounterViewController.h"
-
+#import "TCCounter.h"
 
 @implementation TCCounterViewController
 {
-    NSInteger _count;
+    TCCounter *_counter;
+}
+
+- (id)initWithCounter:(TCCounter *)counter
+{
+    self = [super init];
+    if (self) {
+        _counter = counter;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(modelChanged:) name:TCCounterModelChangedNotification object:_counter];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self modelChanged:nil];
+}
+
+- (void)modelChanged:(NSNotification *)notification
+{
+    [_countLabel setText:[@([_counter count]) stringValue]];
 }
 
 - (IBAction)incrementCount:(id)sender
 {
-    ++_count;
-    [self updateCountLabel];
+    [_counter increment];
 }
 
 - (IBAction)decrementCount:(id)sender
 {
-    --_count;
-    [self updateCountLabel];
-}
-
-- (void)updateCountLabel
-{
-    [_countLabel setText:[@(_count) stringValue]];
+    [_counter decrement];
 }
 
 @end

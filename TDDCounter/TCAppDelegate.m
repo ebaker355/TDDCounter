@@ -8,6 +8,7 @@
 
 #import "TCAppDelegate.h"
 #import "TCCounterViewController.h"
+#import "TCCounter.h"
 
 @implementation TCAppDelegate
 
@@ -15,7 +16,8 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    [self.window setRootViewController:[[TCCounterViewController alloc] init]];
+    TCCounter *counter = [[TCCounter alloc] init];
+    [self.window setRootViewController:[[TCCounterViewController alloc] initWithCounter:counter]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

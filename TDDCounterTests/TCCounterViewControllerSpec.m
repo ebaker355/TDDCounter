@@ -1,14 +1,18 @@
 #import "Kiwi.h"
 
+// Collaborators
 #import "TCCounterViewController.h"
+#import "TCCounter.h"
 
 SPEC_BEGIN(TCCounterViewControllerSpec)
 
         describe(@"TCCounterViewController", ^{
             __block TCCounterViewController *sut;
+            __block id mockCounter;
 
             beforeEach(^{
-                sut = [[TCCounterViewController alloc] init];
+                mockCounter = [TCCounter mock];
+                sut = [[TCCounterViewController alloc] initWithCounter:mockCounter];
                 [sut view];
             });
 
@@ -21,9 +25,15 @@ SPEC_BEGIN(TCCounterViewControllerSpec)
                     [[sut countLabel] shouldNotBeNil];
                 });
 
-                it(@"initial text should be zero (0)", ^{
-                    [[[[sut countLabel] text]
-                            should] equal:@"0"];
+                it(@"initial text should be match counter count value", ^{
+                    // given
+                    [mockCounter stub:@selector(count) andReturn:theValue(42)];
+
+                    // when
+                    [sut viewWillAppear:NO];
+
+                    // then
+                    [[[[sut countLabel] text] should] equal:@"42"];
                 });
             });
 
@@ -43,28 +53,11 @@ SPEC_BEGIN(TCCounterViewControllerSpec)
                 });
             });
 
-            context(@"incrementCount action", ^{
-                context(@"triggered once", ^{
-                    beforeEach(^{
-                        [sut incrementCount:nil];
-                    });
+            context(@"incrementCount", ^{
+                it(@"should ask counter to increment", ^{
+                    [[mockCounter should] receive:@selector(increment)];
 
-                    it(@"should add one to count label", ^{
-                        [[[[sut countLabel] text]
-                                should] equal:@"1"];
-                    });
-                });
-
-                context(@"triggered twice", ^{
-                    beforeEach(^{
-                        [sut incrementCount:nil];
-                        [sut incrementCount:nil];
-                    });
-
-                    it(@"should add two to count label", ^{
-                        [[[[sut countLabel] text]
-                                should] equal:@"2"];
-                    });
+                    [sut incrementCount:nil];
                 });
             });
 
@@ -84,27 +77,38 @@ SPEC_BEGIN(TCCounterViewControllerSpec)
                 });
             });
 
-            context(@"decrementCount action", ^{
-                context(@"triggered once", ^{
-                    beforeEach(^{
-                        [sut decrementCount:nil];
-                    });
+            context(@"decrementCount", ^{
+                it(@"should ask counter to decrement", ^{
+                    [[mockCounter should] receive:@selector(decrement)];
 
-                    it(@"should subtract one from count label", ^{
-                        [[[[sut countLabel] text]
-                                should] equal:@"-1"];
-                    });
+                    [sut decrementCount:nil];
+                });
+            });
+
+            context(@"model changed notification", ^{
+                it(@"should update count label", ^{
+                    // given
+                    [[mockCounter should] receive:@selector(count) andReturn:theValue(2)];
+
+                    // when
+                    [[NSNotificationCenter defaultCenter] postNotificationName:TCCounterModelChangedNotification object:mockCounter];
+
+                    // then
+                    [[[[sut countLabel] text] should] equal:@"2"];
                 });
 
-                context(@"triggered twice", ^{
-                    beforeEach(^{
-                        [sut decrementCount:nil];
-                        [sut decrementCount:nil];
-                    });
+                context(@"from different model", ^{
+                    it(@"should not update count label", ^{
+                        // given
+                        TCCounter *differentCounter = [[TCCounter alloc] init];
+                        [differentCounter setCount:2];
+                        [mockCounter stub:@selector(count) andReturn:theValue(42)];
 
-                    it(@"should subtract two from count label", ^{
-                        [[[[sut countLabel] text]
-                                should] equal:@"-2"];
+                        // when
+                        [[NSNotificationCenter defaultCenter] postNotificationName:TCCounterModelChangedNotification object:differentCounter];
+
+                        // then
+                        [[[[sut countLabel] text] should] equal:@"0"];
                     });
                 });
             });
