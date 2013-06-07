@@ -12,13 +12,6 @@
 
 @interface TCCounterViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *countLabel;
-@property (weak, nonatomic) IBOutlet UIButton *plusButton;
-@property (weak, nonatomic) IBOutlet UIButton *minusButton;
-
 - (id)initWithCounter:(TCCounter *)counter;
-
-- (IBAction)incrementCount:(id)sender;
-- (IBAction)decrementCount:(id)sender;
 
 @end

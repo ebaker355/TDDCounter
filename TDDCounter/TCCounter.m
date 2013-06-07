@@ -8,25 +8,16 @@
 
 #import "TCCounter.h"
 
-NSString *const TCCounterModelChangedNotification = @"TCCounterModelChangedNotification";
-
 @implementation TCCounter
 
 - (void)increment
 {
-    _count += 1;
-    [self postModelChangedNotification];
+    self.count += 1;
 }
 
 - (void)decrement
 {
-    _count -= 1;
-    [self postModelChangedNotification];
-}
-
-- (void)postModelChangedNotification
-{
-    [[NSNotificationCenter defaultCenter] postNotificationName:TCCounterModelChangedNotification object:self];
+    self.count -= 1;
 }
 
 @end

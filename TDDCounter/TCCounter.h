@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const TCCounterModelChangedNotification;
-
 @interface TCCounter : NSObject
 
 @property (assign, nonatomic) NSInteger count;

@@ -2,18 +2,14 @@
 
 #import "TCCounter.h"
 
-@interface NotificationListener : NSObject
-@property (assign, nonatomic) NSInteger modelChangedCount, modelChangedValue;
-
-- (void)counterModelChanged:(NSNotification *)notification;
+@interface KVOObserver : NSObject
+@property (strong, nonatomic) NSString *changedKeyPath;
 @end
 
-@implementation NotificationListener
-- (void)counterModelChanged:(NSNotification *)notification
+@implementation KVOObserver
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    ++_modelChangedCount;
-    TCCounter *counter = (TCCounter *)[notification object];
-    _modelChangedValue = [counter count];
+    [self setChangedKeyPath:keyPath];
 }
 @end
 
@@ -21,40 +17,30 @@ SPEC_BEGIN(TCCounterSpec)
 
         describe(@"TCCounter", ^{
             __block TCCounter *sut;
-            __block NotificationListener *notificationListener;
+            __block KVOObserver *fakeObserver;
 
             beforeEach(^{
                 sut = [[TCCounter alloc] init];
                 [sut setCount:1];
 
-                notificationListener = [[NotificationListener alloc] init];
-                [[NSNotificationCenter defaultCenter]
-                        addObserver:notificationListener selector:@selector(counterModelChanged:) name:TCCounterModelChangedNotification object:sut];
+                fakeObserver = [[KVOObserver alloc] init];
+                [sut addObserver:fakeObserver forKeyPath:@"count" options:NSKeyValueObservingOptionNew context:nil];
             });
 
             afterEach(^{
-                [[NSNotificationCenter defaultCenter]
-                        removeObserver:notificationListener];
-                notificationListener = nil;
+                [sut removeObserver:fakeObserver forKeyPath:@"count"];
+                fakeObserver = nil;
 
                 sut = nil;
             });
 
             context(@"increment", ^{
-                it(@"should post model changed notification", ^{
+                it(@"should trigger KVO observers", ^{
                     // when
                     [sut increment];
 
                     // then
-                    [[@([notificationListener modelChangedCount]) should] equal:@1];
-                });
-
-                it(@"should post notification with new count", ^{
-                    // when
-                    [sut increment];
-
-                    // then
-                    [[@([notificationListener modelChangedValue]) should] equal:@2];
+                    [[[fakeObserver changedKeyPath] should] equal:@"count"];
                 });
 
                 context(@"once", ^{
@@ -80,20 +66,12 @@ SPEC_BEGIN(TCCounterSpec)
             });
 
             context(@"decrement", ^{
-                it(@"should post model changed notification", ^{
+                it(@"should trigger KVO observers", ^{
                     // when
                     [sut decrement];
 
                     // then
-                    [[@([notificationListener modelChangedCount]) should] equal:@1];
-                });
-
-                it(@"should post notification with new count", ^{
-                    // when
-                    [sut decrement];
-
-                    // then
-                    [[@([notificationListener modelChangedValue]) should] equal:@0];
+                    [[[fakeObserver changedKeyPath] should] equal:@"count"];
                 });
 
                 context(@"once", ^{
