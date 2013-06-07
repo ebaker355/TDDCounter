@@ -21,53 +21,26 @@ SPEC_BEGIN(TCCounterSpec)
 
         describe(@"TCCounter", ^{
             __block TCCounter *sut;
+            __block NotificationListener *notificationListener;
 
             beforeEach(^{
                 sut = [[TCCounter alloc] init];
+                [sut setCount:1];
+
+                notificationListener = [[NotificationListener alloc] init];
+                [[NSNotificationCenter defaultCenter]
+                        addObserver:notificationListener selector:@selector(counterModelChanged:) name:TCCounterModelChangedNotification object:sut];
             });
 
             afterEach(^{
+                [[NSNotificationCenter defaultCenter]
+                        removeObserver:notificationListener];
+                notificationListener = nil;
+
                 sut = nil;
             });
 
-            context(@"increment 1", ^{
-                beforeEach(^{
-                    [sut setCount:1];
-                    [sut increment];
-                });
-
-                it(@"should yield 2", ^{
-                    [[@([sut count]) should] equal:@2];
-                });
-            });
-
-            context(@"increment 2", ^{
-                beforeEach(^{
-                    [sut setCount:1];
-                    [sut increment];
-                    [sut increment];
-                });
-
-                it(@"should yield 3", ^{
-                    [[@([sut count]) should] equal:@3];
-                });
-            });
-
             context(@"increment", ^{
-                __block NotificationListener *notificationListener;
-
-                beforeEach(^{
-                    notificationListener = [[NotificationListener alloc] init];
-                    [[NSNotificationCenter defaultCenter]
-                            addObserver:notificationListener selector:@selector(counterModelChanged:) name:TCCounterModelChangedNotification object:sut];
-                });
-
-                afterEach(^{
-                    [[NSNotificationCenter defaultCenter]
-                            removeObserver:notificationListener];
-                    notificationListener = nil;
-                });
-
                 it(@"should post model changed notification", ^{
                     // when
                     [sut increment];
@@ -77,55 +50,36 @@ SPEC_BEGIN(TCCounterSpec)
                 });
 
                 it(@"should post notification with new count", ^{
-                    // given
-                    [sut setCount:1];
-
                     // when
                     [sut increment];
 
                     // then
                     [[@([notificationListener modelChangedValue]) should] equal:@2];
                 });
-            });
 
-            context(@"decrement 1", ^{
-                beforeEach(^{
-                    [sut setCount:1];
-                    [sut decrement];
+                context(@"once", ^{
+                    it(@"should yield 2", ^{
+                        // when
+                        [sut increment];
+
+                        // then
+                        [[@([sut count]) should] equal:@2];
+                    });
                 });
 
-                it(@"should yield 0", ^{
-                    [[@([sut count]) should] equal:@0];
-                });
-            });
+                context(@"twice", ^{
+                    it(@"should yield 3", ^{
+                        // when
+                        [sut increment];
+                        [sut increment];
 
-            context(@"decrement 2", ^{
-                beforeEach(^{
-                    [sut setCount:1];
-                    [sut decrement];
-                    [sut decrement];
-                });
-
-                it(@"should yield -1", ^{
-                    [[@([sut count]) should] equal:@-1];
+                        // then
+                        [[@([sut count]) should] equal:@3];
+                    });
                 });
             });
 
-            context(@"increment", ^{
-                __block NotificationListener *notificationListener;
-
-                beforeEach(^{
-                    notificationListener = [[NotificationListener alloc] init];
-                    [[NSNotificationCenter defaultCenter]
-                            addObserver:notificationListener selector:@selector(counterModelChanged:) name:TCCounterModelChangedNotification object:sut];
-                });
-
-                afterEach(^{
-                    [[NSNotificationCenter defaultCenter]
-                            removeObserver:notificationListener];
-                    notificationListener = nil;
-                });
-
+            context(@"decrement", ^{
                 it(@"should post model changed notification", ^{
                     // when
                     [sut decrement];
@@ -135,14 +89,32 @@ SPEC_BEGIN(TCCounterSpec)
                 });
 
                 it(@"should post notification with new count", ^{
-                    // given
-                    [sut setCount:1];
-
                     // when
                     [sut decrement];
 
                     // then
                     [[@([notificationListener modelChangedValue]) should] equal:@0];
+                });
+
+                context(@"once", ^{
+                    it(@"should yield 0", ^{
+                        // when
+                        [sut decrement];
+
+                        // then
+                        [[@([sut count]) should] equal:@0];
+                    });
+                });
+
+                context(@"twice", ^{
+                    it(@"should yield -1", ^{
+                        // when
+                        [sut decrement];
+                        [sut decrement];
+
+                        // then
+                        [[@([sut count]) should] equal:@-1];
+                    });
                 });
             });
         });
