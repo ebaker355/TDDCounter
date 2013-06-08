@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSString *const TCCounterModelChangedNotification;
+//extern NSString *const TCCounterModelChangedNotification;
 
 @interface TCCounter : NSObject
 

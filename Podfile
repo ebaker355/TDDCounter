@@ -6,4 +6,3 @@ pod 'ReactiveCocoa'
 target 'TDDCounterTests', :exclusive => true do
   pod 'Kiwi'
 end
-

@@ -19,35 +19,31 @@
     self = [super init];
     if (self) {
         _counter = counter;
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(modelChanged:) name:TCCounterModelChangedNotification object:_counter];
     }
     return self;
 }
 
-- (void)dealloc
+- (void)viewDidLoad
 {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
+    [super viewDidLoad];
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self modelChanged:nil];
-}
+    // Set up RAC bindings
+    RAC(_countLabel, text) = [RACSignal combineLatest:@[RACAbleWithStart(_counter, count)]
+                                               reduce:^(NSNumber *number) {
+                                                   return [number stringValue];
+                                               }];
 
-- (void)modelChanged:(NSNotification *)notification
-{
-    [_countLabel setText:[@([_counter count]) stringValue]];
-}
+    RACCommand *incrementCommand = [RACCommand command];
+    [incrementCommand subscribeNext:^(id sender) {
+        [_counter increment];
+    }];
+    [[self.plusButton rac_signalForControlEvents:UIControlEventTouchUpInside] executeCommand:incrementCommand];
 
-- (IBAction)incrementCount:(id)sender
-{
-    [_counter increment];
-}
-
-- (IBAction)decrementCount:(id)sender
-{
-    [_counter decrement];
+    RACCommand *decrementCommand = [RACCommand command];
+    [decrementCommand subscribeNext:^(id sender) {
+        [_counter decrement];
+    }];
+    [[self.minusButton rac_signalForControlEvents:UIControlEventTouchUpInside] executeCommand:decrementCommand];
 }
 
 @end
