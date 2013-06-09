@@ -72,42 +72,6 @@ SPEC_BEGIN(TCCounterViewControllerSpec)
                     });
                 });
             });
-
-//            context(@"decrementCount", ^{
-//                it(@"should ask counter to decrement", ^{
-//                    [[mockCounter should] receive:@selector(decrement)];
-//
-//                    [sut decrementCount:nil];
-//                });
-//            });
-//
-//            context(@"model changed notification", ^{
-//                it(@"should update count label", ^{
-//                    // given
-//                    [[mockCounter should] receive:@selector(count) andReturn:theValue(2)];
-//
-//                    // when
-//                    [[NSNotificationCenter defaultCenter] postNotificationName:TCCounterModelChangedNotification object:mockCounter];
-//
-//                    // then
-//                    [[[[sut countLabel] text] should] equal:@"2"];
-//                });
-//
-//                context(@"from different model", ^{
-//                    it(@"should not update count label", ^{
-//                        // given
-//                        TCCounter *differentCounter = [[TCCounter alloc] init];
-//                        [differentCounter setCount:2];
-//                        [mockCounter stub:@selector(count) andReturn:theValue(42)];
-//
-//                        // when
-//                        [[NSNotificationCenter defaultCenter] postNotificationName:TCCounterModelChangedNotification object:differentCounter];
-//
-//                        // then
-//                        [[[[sut countLabel] text] should] equal:@"0"];
-//                    });
-//                });
-//            });
         });
 
 SPEC_END

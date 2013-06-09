@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="572fcce4-e24a-4cfa-9354-257ffa34196c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounter/TCCounter.h" afterPath="$PROJECT_DIR$/TDDCounter/TCCounter.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounter/TCCounter.m" afterPath="$PROJECT_DIR$/TDDCounter/TCCounter.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounterTests/TCCounterSpec.m" afterPath="$PROJECT_DIR$/TDDCounterTests/TCCounterSpec.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounter/Views/TCCounterView.xib" afterPath="$PROJECT_DIR$/TDDCounter/Views/TCCounterView.xib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounter/TCCounterViewController.m" afterPath="$PROJECT_DIR$/TDDCounter/TCCounterViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounter/TCCounterViewController.h" afterPath="$PROJECT_DIR$/TDDCounter/TCCounterViewController.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m" afterPath="$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TDDCounter/TDDCounter-Prefix.pch" afterPath="$PROJECT_DIR$/TDDCounter/TDDCounter-Prefix.pch" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TDDCounter.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="572fcce4-e24a-4cfa-9354-257ffa34196c" time="1370723914810" ignored="false" />
+    <file path="/Dummy.txt" changelist="572fcce4-e24a-4cfa-9354-257ffa34196c" time="1370754639390" ignored="false" />
     <file path="/fragment.mm" changelist="572fcce4-e24a-4cfa-9354-257ffa34196c" time="1370718082418" ignored="false" />
     <file path="$PROJECT_DIR$/Pods/BuildHeaders/ReactiveCocoa/NSObject+RACKVOWrapper.h" changelist="572fcce4-e24a-4cfa-9354-257ffa34196c" time="1370475375543" ignored="false" />
     <file path="$PROJECT_DIR$/Pods/BuildHeaders/Kiwi/KWBeEmptyMatcher.h" changelist="572fcce4-e24a-4cfa-9354-257ffa34196c" time="1370475375546" ignored="false" />
@@ -151,80 +144,7 @@
     <favorites_list name="TDDCounter" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="TCCounterViewControllerSpec.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="23" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TCCounter.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounter.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TCCounterSpec.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDDCounterTests/TCCounterSpec.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="71" selection-start="2139" selection-end="2144" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TCCounterViewController.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounterViewController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="7" selection-start="971" selection-end="971" vertical-scroll-proportion="0.88736266">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TCCounterViewController.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounterViewController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="52" selection-start="333" selection-end="451" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Podfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Podfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="15" selection-start="51" selection-end="60" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TDDCounter-Prefix.pch" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDDCounter/TDDCounter-Prefix.pch">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="14" selection-start="330" selection-end="359" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TCCounter.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounter.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -235,6 +155,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
+    <option name="myStructureFilterPaths" />
     <option name="myDateState">
       <MyDateState />
     </option>
@@ -242,15 +163,15 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/TDDCounter/TCCounterViewController.h" />
         <option value="$PROJECT_DIR$/TDDCounter/TCAppDelegate.m" />
         <option value="$PROJECT_DIR$/Podfile" />
         <option value="$PROJECT_DIR$/TDDCounter/TDDCounter-Prefix.pch" />
-        <option value="$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m" />
         <option value="$PROJECT_DIR$/TDDCounter/TCCounter.h" />
         <option value="$PROJECT_DIR$/TDDCounterTests/TCCounterSpec.m" />
         <option value="$PROJECT_DIR$/TDDCounter/TCCounter.m" />
         <option value="$PROJECT_DIR$/TDDCounter/TCCounterViewController.m" />
+        <option value="$PROJECT_DIR$/TDDCounter/TCCounterViewController.h" />
+        <option value="$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m" />
       </list>
     </option>
   </component>
@@ -374,13 +295,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Objective-C" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="TDDCounterTests" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.TDDCounter">
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="TDDCounter" TARGET_NAME="TDDCounterTests" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE">
@@ -424,9 +345,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32936507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16372618" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
@@ -439,7 +361,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -558,63 +479,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Pods/Headers/Kiwi/KiwiMacros.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="67" column="8" selection-start="3375" selection-end="3375" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Podfile">
+    <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounterViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="15" selection-start="51" selection-end="60" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDDCounter/TDDCounter-Prefix.pch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="330" selection-end="359" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounterViewController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="333" selection-end="451" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="23" selection-start="2174" selection-end="2174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.0">
+        <state line="35" column="56" selection-start="882" selection-end="882" vertical-scroll-proportion="0.53168046">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TDDCounterTests/TCCounterSpec.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="71" selection-start="2139" selection-end="2144" vertical-scroll-proportion="0.0">
+        <state line="74" column="71" selection-start="2139" selection-end="2144" vertical-scroll-proportion="0.22727273">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounter.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+        <state line="14" column="8" selection-start="261" selection-end="261" vertical-scroll-proportion="0.3278237">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounterViewController.m">
+    <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="7" selection-start="971" selection-end="971" vertical-scroll-proportion="0.88736266">
+        <state line="11" column="0" selection-start="278" selection-end="278" vertical-scroll-proportion="0.25757575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDDCounter/TDDCounter-Prefix.pch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="14" selection-start="330" selection-end="359" vertical-scroll-proportion="0.30440772">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="51" selection-end="60" vertical-scroll-proportion="0.07024793">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDDCounter/TCCounterViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="43" selection-start="503" selection-end="503" vertical-scroll-proportion="0.4214876">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TDDCounterTests/TCCounterViewControllerSpec.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="15" selection-start="2545" selection-end="2545" vertical-scroll-proportion="1.6859504">
           <folding />
         </state>
       </provider>

@@ -18,7 +18,4 @@
 
 - (id)initWithCounter:(TCCounter *)counter;
 
-- (IBAction)incrementCount:(id)sender;
-- (IBAction)decrementCount:(id)sender;
-
 @end
